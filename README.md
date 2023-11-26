@@ -24,15 +24,21 @@ Use your favorite web browser and go to the URL listed in the console output: ht
 
 ![Flask server](./doc/flask-server.png)
 
+Optionally, you can visualize the recorded tracks using Python script `visualize.py`: it will create an HTML map file (`travel_map.html`) using OpenStreetMap to visualize every journey CSV file as polyline:
+
+![Map visualization](./doc/visualize-map-folium.png)
+
+
 ## How does it work?
 
-This script automatically sends two HTTP GET requests to the API - one for speed and one for location. The source for the train speed seems to be independent of GPS - as speed still works in tunnels whereas location (obviously) doesn ot.
+This script automatically sends two HTTP GET requests to the API - one for speed and one for location. The source for the train speed seems to be independent of GPS - as speed still works in tunnels whereas location (obviously) doesn't.
 
 ## Prerequisites
 
 * Working Python3 environment with the `requests` module installed.
 * Be on an ÖBB train (tested on RJX so far).
 * Manually connect to WiFi "OEBB".
+* Python module `folium` for visualization of track on map (optional).
 
 
 ## Future ideas

@@ -55,4 +55,5 @@ if __name__ == '__main__':
                 f.write(csv_line)
                 f.flush()  # directly flush the data, so that it can be accessed by another application
             except:
-                pass
+                f.write(csv_line)
+                f.flush()  # directly flush the data, so that it can be accessed by another application
