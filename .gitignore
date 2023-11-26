@@ -1,0 +1,8 @@
+# directories
+.idea/
+venv/
+__pycache__/
+# files
+.DS_Store
+*.csv
+static/*.woff*
