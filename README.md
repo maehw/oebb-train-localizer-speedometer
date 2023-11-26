@@ -26,7 +26,11 @@ Use your favorite web browser and go to the URL listed in the console output: ht
 
 Optionally, you can visualize the recorded tracks using Python script `visualize.py`: it will create an HTML map file (`travel_map.html`) using OpenStreetMap to visualize every journey CSV file as polyline:
 
-![Map visualization](./doc/visualize-map-folium.png)
+![Map visualization (red)](./doc/visualize-map-folium.png)
+
+By (current) default, you can even get a very colorful map that also dies visualize train speed:
+
+![Map visualization (color)](./doc/visualize-map-folium-colored.png)
 
 
 ## How does it work?
